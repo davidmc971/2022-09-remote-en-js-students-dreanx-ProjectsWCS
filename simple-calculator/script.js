@@ -20,31 +20,65 @@
 //     case '*' : console.log(firstValue * secondValue);
 //     break;
 //     default:  console.log("Invalid Operator");
-// };}
+// }}
 
 // calc();
 
+
+
+
+//WITH A WHILE LOOP\\
 let playerName = prompt('What is your name?');
 const random = Math.floor(Math.random() * 100) + 1;
-let number = prompt('Give a number bewteen 1 and 100');
 
 
-function game() {while (number !== random) {
+function game() {let number = prompt('Give a number bewteen 1 and 100');
+
+    while (number !== random) {
 
 if (number > random) {
 
             console.log("It is less");
             number = prompt(`Wrong! Try again, it is LESS than ${number}!`);
 } 
-if (number < random) {
+else if (number < random) {
 
             console.log("It is more");
             number = prompt(`Wrong! Try again, it is MORE than ${number}!`);
 } 
-if (number == random) {
+else if (number == random) {
         console.log(`${playerName} WINS!`);
         break;
     }
 }};
 
-game();
+
+let play = prompt(`${playerName}, do you want to play a game? Y/N`)
+if(play === "Y") {
+    game();
+} else {console.log("Too Bad!")}
+
+
+
+
+
+//WITH A FOR LOOP\\
+// let playerName = prompt('What is your name?');
+// const random = Math.floor(Math.random() * 100) + 1;
+
+// function game() {
+//     for(let number = prompt('Give a number bewteen 1 and 100'); number !== random ; number = prompt('Give a number bewteen 1 and 100')) {
+
+//         if (number > random) {
+//             console.log("It is less");
+//     } 
+//         else if (number < random) {
+//             console.log("It is more");
+//     } 
+//         else if (number == random) {
+//             console.log(`${playerName} WINS!`);
+//             break;
+//     }
+//     }};
+
+// game();
