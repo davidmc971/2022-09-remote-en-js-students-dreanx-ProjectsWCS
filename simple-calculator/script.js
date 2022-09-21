@@ -28,7 +28,7 @@
 
 
 //WITH A WHILE LOOP\\
-let playerName = prompt('What is your name?');
+
 const random = Math.floor(Math.random() * 100) + 1;
 console.log(random);
 let count = 1;
@@ -36,7 +36,7 @@ let divy = document.getElementById("result");
 let catImg = document.getElementById("img");
 
 function game() {
-
+    let playerName = prompt('What is your name?');
     let number = prompt('Give a number between 1 and 100');
     while (number !== random) {
 
@@ -64,7 +64,7 @@ else {
 }};
 
 
-let play = prompt(`${playerName}, do you want to play a game? Y/N`)
+let play = prompt(`Do you want to play a game? Y/N`)
 if(play === "Y" || play === "y" || play === "yes" || play === "yis") {
     game();
 } else {console.log("Too Bad!")}
