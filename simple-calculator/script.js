@@ -3,12 +3,31 @@
 // let operator = prompt('Value Operator?');
 // let secondValue = prompt('Value 2?');
 
-// firstValue = parseInt(firstValue);
-// secondValue = parseInt(secondValue);
+// let firstValueInt = parseInt(firstValue);
+// let secondValueInt = parseInt(secondValue);
 
-// //     operator === "+"
-// //    ? console.log(firstValue + secondValue)
-// //    : console.log(firstValue - secondValue);
+// console.log("String1" + firstValue);
+// console.log("Int1" + firstValueInt);
+// console.log("String2" + secondValue);
+// console.log("Int2" + secondValueInt);
+
+
+// console.log("Add 2 strings:" + firstValue + secondValue);
+// console.log("Add 2 integers:" + firstValueInt + secondValueInt);
+
+// let random = Math.floor(Math.random() * 100) + 1;
+// console.log("random:" + random);
+// random = 5;
+// if(firstValue<random) {console.log("It works with strings!")} else{console.log("Not working with strings..")};
+// if(firstValueInt<random) {console.log("It works with integers!")} else{console.log("Not working with integers..")};
+// if(firstValue===random) {console.log("Strict equality works with strings!")} else{console.log("Strict equality not working with strings..")};
+// if(firstValueInt===random) {console.log("Strict equality works with integers!")} else{console.log("Strict equality not working with integers..")};
+// if(firstValue==random) {console.log("Equality works with strings!")} else{console.log("Equality not working with strings..")};
+// if(firstValueInt==random) {console.log("Equality works with integers!")} else{console.log("Equality not working with integers..")};
+
+//     operator === "+"
+//    ? console.log(firstValue + secondValue)
+//    : console.log(firstValue - secondValue);
 
 // function calc() { switch (operator) {
 //     case '+' : console.log(firstValue + secondValue);
