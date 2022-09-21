@@ -30,15 +30,17 @@
 //WITH A WHILE LOOP\\
 let playerName = prompt('What is your name?');
 const random = Math.floor(Math.random() * 100) + 1;
-let count = 0;
+console.log(random);
+let count = 1;
 let divy = document.getElementById("result");
+let catImg = document.getElementById("img");
 
-function game() {let number = prompt('Give a number bewteen 1 and 100');
+function game() {
 
+    let number = prompt('Give a number bewteen 1 and 100');
     while (number !== random) {
 
 if (number > random) {
-
             console.log("It is less");
             count++;
             divy.innerHTML = "LESS";
@@ -51,16 +53,18 @@ else if (number < random) {
             divy.innerHTML = "MORE";
             number = prompt(`Wrong! Try again, it is MORE than ${number}!`);
 } 
-else if (number == random) {
-        console.log(`${playerName} WINS! In ${count} tries!`);
-        divy.innerHTML = `Congrats ${playerName}! The Number was ${random}! You got it in ${count} tries!`;
+else {
+        if(count === 1){console.log(`${playerName} WINS! In ${count} try!`)} else {console.log(`${playerName} WINS! In ${count} tries!`)};
+        if(count === 1){divy.innerHTML = `Congrats ${playerName}! The Number was ${random}! You got it in ${count} try!`}
+        else{divy.innerHTML = `Congrats ${playerName}! The Number was ${random}! You got it in ${count} tries!`};
+        catImg.style.display = "block";
         break;
     }
 }};
 
 
 let play = prompt(`${playerName}, do you want to play a game? Y/N`)
-if(play === "Y") {
+if(play === "Y" || play === "y") {
     game();
 } else {console.log("Too Bad!")}
 
