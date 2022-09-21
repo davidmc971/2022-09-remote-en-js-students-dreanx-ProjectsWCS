@@ -30,7 +30,7 @@
 //WITH A WHILE LOOP\\
 let playerName = prompt('What is your name?');
 const random = Math.floor(Math.random() * 100) + 1;
-
+let count = 0;
 
 function game() {let number = prompt('Give a number bewteen 1 and 100');
 
@@ -39,15 +39,17 @@ function game() {let number = prompt('Give a number bewteen 1 and 100');
 if (number > random) {
 
             console.log("It is less");
+            count++;
             number = prompt(`Wrong! Try again, it is LESS than ${number}!`);
 } 
 else if (number < random) {
 
             console.log("It is more");
+            count++;
             number = prompt(`Wrong! Try again, it is MORE than ${number}!`);
 } 
 else if (number == random) {
-        console.log(`${playerName} WINS!`);
+        console.log(`${playerName} WINS! In ${count} tries!`);
         break;
     }
 }};
