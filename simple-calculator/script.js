@@ -6,11 +6,11 @@
 // firstValue = parseInt(firstValue);
 // secondValue = parseInt(secondValue);
 
-//     operator === "+"
-//    ? console.log(firstValue + secondValue)
-//    : console.log(firstValue - secondValue);
+// //     operator === "+"
+// //    ? console.log(firstValue + secondValue)
+// //    : console.log(firstValue - secondValue);
 
-// switch (operator) {
+// function calc() { switch (operator) {
 //     case '+' : console.log(firstValue + secondValue);
 //     break;
 //     case '-' : console.log(firstValue - secondValue);
@@ -20,30 +20,31 @@
 //     case '*' : console.log(firstValue * secondValue);
 //     break;
 //     default:  console.log("Invalid Operator");
-// };
+// };}
 
-console.log("test");
+// calc();
 
 let playerName = prompt('What is your name?');
 const random = Math.floor(Math.random() * 100) + 1;
 let number = prompt('Give a number bewteen 1 and 100');
 
-while(number !== random) {
+
+function game() {while (number !== random) {
+
 if (number > random) {
-    console.log("It is less");
-    number = prompt('Give a number bewteen 1 and 100');
-} if (number < random) {
-    console.log("It is more");
-    number = prompt('Give a number bewteen 1 and 100');
-} else {
-    console.log(`${playerName} WINS!`);
-}
-}
 
+            console.log("It is less");
+            number = prompt(`Wrong! Try again, it is LESS than ${number}!`);
+} 
+if (number < random) {
 
-    // number > random 
-    // ? console.log("It is less")
-    // : number < random 
-    // ? console.log("It is more") ; prompt('Give a number bewteen 1 and 100')
-    // : console.log("You win!") ;
+            console.log("It is more");
+            number = prompt(`Wrong! Try again, it is MORE than ${number}!`);
+} 
+if (number == random) {
+        console.log(`${playerName} WINS!`);
+        break;
+    }
+}};
 
+game();
