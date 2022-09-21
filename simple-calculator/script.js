@@ -22,6 +22,8 @@
 //     default:  console.log("Invalid Operator");
 // };
 
+console.log("test");
+
 let playerName = prompt('What is your name?');
 const random = Math.floor(Math.random() * 100) + 1;
 let number = prompt('Give a number bewteen 1 and 100');
@@ -35,7 +37,13 @@ if (number > random) {
     number = prompt('Give a number bewteen 1 and 100');
 } else {
     console.log(`${playerName} WINS!`);
-    break;
 }
 }
+
+
+    // number > random 
+    // ? console.log("It is less")
+    // : number < random 
+    // ? console.log("It is more") ; prompt('Give a number bewteen 1 and 100')
+    // : console.log("You win!") ;
 
