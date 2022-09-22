@@ -54,6 +54,7 @@ let count = 1;
 let divy = document.getElementById("result");
 let catImg = document.getElementById("img");
 
+
 function game() {
     let playerName = prompt('What is your name?');
     let number = prompt('Give a number between 1 and 100');
@@ -63,14 +64,14 @@ if (number > random) {
             console.log("It is less");
             count++;
             divy.innerHTML = "LESS";
-            number = prompt(`Wrong! Try again, it is LESS than ${number}!`);
+            number = prompt(`Wrong! Try again, it is LESS than ${number}! (Try n°${count})`);
 } 
 else if (number < random) {
 
             console.log("It is more");
             count++;
             divy.innerHTML = "MORE";
-            number = prompt(`Wrong! Try again, it is MORE than ${number}!`);
+            number = prompt(`Wrong! Try again, it is MORE than ${number}! (Try n°${count})`);
 } 
 else {
         if(count === 1){console.log(`${playerName} WINS! In ${count} try!`)} else {console.log(`${playerName} WINS! In ${count} tries!`)};
@@ -83,10 +84,12 @@ else {
 }};
 
 
-let play = prompt(`Do you want to play a game? Y/N`)
+setTimeout(() => {
+    let play = prompt(`Do you want to play a game? Y/N`);
+  ;
 if(play === "Y" || play === "y" || play === "yes" || play === "yis") {
     game();
-} else {console.log("Too Bad!")}
+} else {console.log("Too Bad!")}}, 3000);
 
 
 
