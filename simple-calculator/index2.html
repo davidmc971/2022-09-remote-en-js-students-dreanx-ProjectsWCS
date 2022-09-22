@@ -9,26 +9,28 @@
 </head>
 <body>
     <header>
-        <!-- <div id="result"></div>
-        <img id="img" src="https://placekitten.com/200/287"></img> -->
+
     </header>
     <main class="full-container">
+        <img id="img" src="https://placekitten.com/200/287"></img>
+        <div id="help" class="help"></div>
         <div class="sub-container">
             <h1 class="title">Welcome to the Guessing Game!</h1>
+            <button id="restartbutton" class="button restart">RESTART</button>
             <form class="form">
                 <div class="input-group name">
                  <label>Name</label>
-                    <input>
+                    <input id="inputname">
                 </div>
                 <div class="input-group number">
-                    <label>Input your number between 1 and 100</label>
-                    <input>
+                    <label id="forme">Input your number between 1 and 100</label>
+                    <input id="inputnumber">
                 </div>
-                <button type="submit" class="submit-button">Guess!</button>
+                <button id="numberbutton" type="submit" class="button submit">Guess!</button>
             </form>
         </div>
     </main>
-    <script src="script2.js"></script>
+    <script src="script2.js" defer></script>
 
 </body>
 </html>
