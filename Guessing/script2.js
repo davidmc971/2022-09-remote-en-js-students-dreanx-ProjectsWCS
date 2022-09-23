@@ -33,6 +33,6 @@ else {
         else {forme.innerHTML = `Congrats ${inputname}! The Number was ${random}! You got it in ${count} tries! You're not really good at this, are you?!`};
         img.style.display = "block";
     }
-});
+}); test
 
 
