@@ -18,12 +18,13 @@ if (number > random) {
             console.log("It is less");
             count++;
             forme.innerHTML = `TRY n°${count}... IT IS LESS, TRY AGAIN:`;
-            
+            document.getElementById("inputnumber").value = "";
 } 
 else if (number < random) {
             console.log("It is more");
             count++;
             forme.innerHTML = `TRY n°${count}... IT IS MORE, TRY AGAIN:`;
+            document.getElementById("inputnumber").value = "";
 } 
 else {
         if(count === 1){console.log(`${inputname} WINS! In ${count} try!`)} else {console.log(`${inputname} WINS! In ${count} tries!`)};
