@@ -8,7 +8,7 @@ restartbutton.addEventListener("click", function(){location.reload()});
 
 let numberbutton = document.getElementById("numberbutton");
 let forme = document.getElementById("forme");
-let help = document.getElementById("help");
+let catimg = document.getElementById("catimg");
 
 numberbutton.addEventListener("click", function game(event) {
     event.preventDefault();
